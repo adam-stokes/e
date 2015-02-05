@@ -11,9 +11,12 @@
 (defvar required-packages
   '(magit
     yasnippet
+    jedi
+    ujelly-theme
+    helm
     ) "list of packages that are installed at launch")
 
-
+;; check installed packages
 (defun packages-installed-p ()
   (loop for p in required-packages
 	when (not (package-installed-p p)) do (return nil)
