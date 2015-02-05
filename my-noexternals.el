@@ -29,8 +29,7 @@
 ;; do not blink cursor
 (blink-cursor-mode -1)
 ;; cursor color
-(set-cursor-color "LawnGreen")
-
+(add-to-list 'default-frame-alist '(cursor-color . "LawnGreen"))
 ;; delete trailing whitespace
 (defalias 'dtw 'delete-trailing-whitespace)
 ;; y/n
