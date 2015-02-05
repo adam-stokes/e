@@ -39,3 +39,22 @@
 ;; ace
 (require 'ace-jump-mode)
 (global-set-key (kbd "C-c SPC") 'ace-jump-mode)
+
+;; autopair
+(require 'autopair)
+(autopair-global-mode 1)
+
+;; autopep8
+(require 'py-autopep8)
+(add-hook 'before-save-hook 'py-autopep8-before-save)
+
+;; highlight line
+(require 'hl-line)
+(global-hl-line-mode t)
+
+;; markdown
+(require 'markdown-mode)
+
+;; ibuffer
+(require 'ibuffer)
+(global-set-key (kbd "C-x C-b") 'ibuffer)

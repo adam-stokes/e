@@ -17,6 +17,11 @@
     helm
     helm-package
     rainbow-delimiters
+    autopair
+    py-autopep8
+    hl-line
+    markdown-mode
+    ibuffer
     ) "list of packages that are installed at launch")
 
 ;; check installed packages
