@@ -22,5 +22,20 @@
 (add-hook 'python-mode-hook 'jedi:setup)
 
 ;; helm
+(require 'helm)
 (require 'helm-config)
 (global-set-key (kbd "M-x") 'helm-M-x)
+(global-set-key (kbd "C-x C-f") 'helm-find-files)
+(global-set-key (kbd "C-x b") 'helm-buffers-list)
+(global-set-key (kbd "C-c h o") 'helm-occur)
+(helm-mode 1)
+
+(require 'helm-package)
+
+;; rainbow parens
+(require 'rainbow-delimiters)
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+
+;; ace
+(require 'ace-jump-mode)
+(global-set-key (kbd "C-c SPC") 'ace-jump-mode)

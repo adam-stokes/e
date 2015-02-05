@@ -9,11 +9,14 @@
 
 ;; packages to load
 (defvar required-packages
-  '(magit
+  '(ace-jump-mode
+    magit
     yasnippet
     jedi
     ujelly-theme
     helm
+    helm-package
+    rainbow-delimiters
     ) "list of packages that are installed at launch")
 
 ;; check installed packages
