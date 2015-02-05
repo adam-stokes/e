@@ -1,8 +1,8 @@
 ;; base config, no external packages/dependencies
 
 ;; Font
-;; (set-frame-font "Source Code Pro")
-(add-to-list 'default-frame-alist '(font . "Source Code Pro"))
+(add-to-list 'default-frame-alist '(font . "Ubuntu Mono 12"))
+(set-frame-font "Ubuntu Mono 12")
 ;; No backup files
 (setq make-backup-files nil)
 ;; No pause on redisplay
@@ -26,6 +26,11 @@
 (prefer-coding-system 'utf-8)
 ;; Do not ask for confirmation
 (setq confirm-nonexistent-file-or-buffer nil)
+;; do not blink cursor
+(blink-cursor-mode -1)
+;; cursor color
+(set-cursor-color "LawnGreen")
+
 ;; delete trailing whitespace
 (defalias 'dtw 'delete-trailing-whitespace)
 ;; y/n
