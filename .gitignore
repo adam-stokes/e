@@ -2,3 +2,4 @@ elpa
 *.dat
 .python-environments
 auto-save-list
+url
