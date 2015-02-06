@@ -22,6 +22,7 @@
     hl-line
     markdown-mode
     ibuffer
+    yaml-mode
     ) "list of packages that are installed at launch")
 
 ;; check installed packages

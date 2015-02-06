@@ -58,3 +58,6 @@
 ;; ibuffer
 (require 'ibuffer)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
+
+;; yaml
+(require 'yaml-mode)
