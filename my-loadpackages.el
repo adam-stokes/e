@@ -61,3 +61,6 @@
 
 ;; yaml
 (require 'yaml-mode)
+
+;; toml
+(require 'toml-mode)

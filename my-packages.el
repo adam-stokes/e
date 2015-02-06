@@ -23,6 +23,7 @@
     markdown-mode
     ibuffer
     yaml-mode
+    toml-mode
     ) "list of packages that are installed at launch")
 
 ;; check installed packages
