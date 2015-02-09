@@ -64,3 +64,7 @@
 
 ;; toml
 (require 'toml-mode)
+
+;; sass/scss
+(require 'scss-mode)
+(require 'sass-mode)

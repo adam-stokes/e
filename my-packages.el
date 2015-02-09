@@ -24,6 +24,8 @@
     ibuffer
     yaml-mode
     toml-mode
+    sass-mode
+    scss-mode
     ) "list of packages that are installed at launch")
 
 ;; check installed packages
