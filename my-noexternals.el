@@ -1,8 +1,8 @@
 ;; base config, no external packages/dependencies
 
 ;; Font
-(add-to-list 'default-frame-alist '(font . "Ubuntu Mono 12"))
-(set-frame-font "Ubuntu Mono 12")
+(add-to-list 'default-frame-alist '(font . "Source Code Pro 11"))
+(set-frame-font "Source Code Pro 11")
 ;; No backup files
 (setq make-backup-files nil)
 ;; No pause on redisplay
