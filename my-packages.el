@@ -26,6 +26,7 @@
     toml-mode
     sass-mode
     scss-mode
+    neotree
     ) "list of packages that are installed at launch")
 
 ;; check installed packages

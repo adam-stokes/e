@@ -68,3 +68,7 @@
 ;; sass/scss
 (require 'scss-mode)
 (require 'sass-mode)
+
+;; neotree
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
