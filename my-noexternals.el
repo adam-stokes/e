@@ -1,8 +1,8 @@
 ;; base config, no external packages/dependencies
 
 ;; Font
-(add-to-list 'default-frame-alist '(font . "Source Code Pro 11"))
-(set-frame-font "Source Code Pro 11")
+;; (add-to-list 'default-frame-alist '(font . "Source Code Pro 11"))
+(set-face-attribute 'default nil :height 105 :family "Source Code Pro")
 ;; No backup files
 (setq make-backup-files nil)
 ;; No pause on redisplay
