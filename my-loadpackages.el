@@ -77,3 +77,6 @@
 (require 'flycheck)
 (global-flycheck-mode)
 (global-set-key (kbd "C-c C-j") 'helm-flycheck)
+
+;; helm flycheck
+(require 'helm-flycheck)
