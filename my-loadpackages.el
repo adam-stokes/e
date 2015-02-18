@@ -72,3 +72,7 @@
 ;; neotree
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
+
+;; flycheck
+(require 'flycheck)
+(global-flycheck-mode)

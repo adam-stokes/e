@@ -27,6 +27,8 @@
     sass-mode
     scss-mode
     neotree
+    flycheck
+    flycheck-pyflakes
     ) "list of packages that are installed at launch")
 
 ;; check installed packages
