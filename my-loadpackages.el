@@ -80,3 +80,6 @@
 
 ;; helm flycheck
 (require 'helm-flycheck)
+
+;; coffee script
+(require 'coffee-mode)
