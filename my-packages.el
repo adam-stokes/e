@@ -30,6 +30,8 @@
     flycheck
     flycheck-pyflakes
     coffee-mode
+    key-chord
+    multi-term
     ) "list of packages that are installed at launch")
 
 ;; check installed packages
