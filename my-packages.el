@@ -29,9 +29,8 @@
     neotree
     flycheck
     flycheck-pyflakes
+    helm-flycheck
     coffee-mode
-    key-chord
-    multi-term
     ) "list of packages that are installed at launch")
 
 ;; check installed packages
