@@ -4,7 +4,7 @@
 (load "~/.emacs.d/my-packages.el")
 
 ;; Set ujelly theme
-(load-theme 'ujelly t)
+(load-theme 'flatui t)
 
 ;; magit
 (require 'magit)

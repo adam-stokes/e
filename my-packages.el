@@ -13,7 +13,7 @@
     magit
     yasnippet
     jedi
-    ujelly-theme
+    flatui-theme
     helm
     helm-package
     rainbow-delimiters
