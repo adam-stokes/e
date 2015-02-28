@@ -87,3 +87,8 @@
 ;; ansi color
 (require 'ansi-color)
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
+
+;; ruby
+(require 'robe)
+(require 'rspec-mode)
+(require 'ruby-end)

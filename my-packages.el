@@ -10,27 +10,31 @@
 ;; packages to load
 (defvar required-packages
   '(ace-jump-mode
-    magit
-    yasnippet
-    jedi
-    flatui-theme
-    helm
-    helm-package
-    rainbow-delimiters
     autopair
-    py-autopep8
-    hl-line
-    markdown-mode
-    ibuffer
-    yaml-mode
-    toml-mode
-    sass-mode
-    scss-mode
-    neotree
+    coffee-mode
+    flatui-theme
     flycheck
     flycheck-pyflakes
+    helm
     helm-flycheck
-    coffee-mode
+    helm-package
+    hl-line
+    ibuffer
+    inf-ruby
+    jedi
+    magit
+    markdown-mode
+    neotree
+    py-autopep8
+    rainbow-delimiters
+    robe
+    rspec-mode
+    ruby-end
+    sass-mode
+    scss-mode
+    toml-mode
+    yaml-mode
+    yasnippet
     ) "list of packages that are installed at launch")
 
 ;; check installed packages
