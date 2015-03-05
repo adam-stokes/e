@@ -3,8 +3,8 @@
 ;; load packages
 (load "~/.emacs.d/my-packages.el")
 
-;; Set ujelly theme
-(load-theme 'flatui t)
+;; Set theme
+(load-theme 'gotham t)
 
 ;; magit
 (require 'magit)
