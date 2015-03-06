@@ -4,7 +4,7 @@
 (load "~/.emacs.d/my-packages.el")
 
 ;; Set theme
-(load-theme 'gotham t)
+(load-theme 'atom-dark t)
 
 ;; magit
 (require 'magit)

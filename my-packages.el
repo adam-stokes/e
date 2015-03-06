@@ -12,7 +12,7 @@
   '(ace-jump-mode
     autopair
     coffee-mode
-    gotham-theme
+    atom-dark-theme
     flycheck
     flycheck-pyflakes
     helm
