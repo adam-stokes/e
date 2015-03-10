@@ -32,6 +32,7 @@
     ruby-end
     sass-mode
     scss-mode
+    slim-mode
     toml-mode
     yaml-mode
     yasnippet
