@@ -83,6 +83,7 @@
 
 ;; coffee script
 (require 'coffee-mode)
+(setq coffee-tab-width 2)
 
 ;; ansi color
 (require 'ansi-color)

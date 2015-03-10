@@ -1,7 +1,7 @@
 ;; base config, no external packages/dependencies
 
 ;; Font
-;; (add-to-list 'default-frame-alist '(font . "Source Code Pro 11"))
+(add-to-list 'default-frame-alist '(font . "Monaco 11"))
 (set-face-attribute 'default nil :height 115 :family "Monaco")
 ;; No backup files
 (setq make-backup-files nil)
