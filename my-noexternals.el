@@ -1,8 +1,8 @@
 ;; base config, no external packages/dependencies
 
 ;; Font
-(add-to-list 'default-frame-alist '(font . "Monaco 11"))
-(set-face-attribute 'default nil :height 115 :family "Monaco")
+(add-to-list 'default-frame-alist '(font . "Consolas 11"))
+(set-face-attribute 'default nil :height 115 :family "Consolas")
 ;; No backup files
 (setq make-backup-files nil)
 ;; No pause on redisplay
@@ -13,7 +13,7 @@
 (setq inhibit-startup-message t)
 ;; default browser
 (setq browse-url-browser-function 'browse-url-generic)
-(setq browse-url-generic-program "firefox")
+(setq browse-url-generic-program "google-chrome")
 ;; spaces instead of tabs
 (setq-default indent-tabs-mode nil)
 ;; truncate lines
