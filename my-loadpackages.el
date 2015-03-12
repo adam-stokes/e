@@ -96,3 +96,6 @@
 (require 'robe)
 (require 'rspec-mode)
 (require 'ruby-end)
+
+;; cucumber features
+(require 'feature-mode)

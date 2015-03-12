@@ -36,6 +36,7 @@
     toml-mode
     yaml-mode
     yasnippet
+    feature-mode
     ) "list of packages that are installed at launch")
 
 ;; check installed packages
