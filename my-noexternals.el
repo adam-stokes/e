@@ -1,8 +1,8 @@
 ;; base config, no external packages/dependencies
 
 ;; Font
-(add-to-list 'default-frame-alist '(font . "Consolas 11"))
-(set-face-attribute 'default nil :height 115 :family "Consolas")
+(add-to-list 'default-frame-alist '(font . "Consolas 10"))
+(set-face-attribute 'default nil :height 100 :family "Consolas")
 ;; No backup files
 (setq make-backup-files nil)
 ;; No pause on redisplay
