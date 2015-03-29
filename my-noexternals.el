@@ -3,6 +3,10 @@
 ;; Font
 (add-to-list 'default-frame-alist '(font . "Consolas 10"))
 (set-face-attribute 'default nil :height 100 :family "Consolas")
+
+(when (string= system-name "DRAGONRAH")
+  (set-face-attribute 'default nil :height 130 :family "Consolas"))
+
 ;; No backup files
 (setq make-backup-files nil)
 ;; No pause on redisplay
