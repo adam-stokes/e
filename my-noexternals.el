@@ -6,6 +6,8 @@
 
 (when (string= system-name "DRAGONRAH")
   (set-face-attribute 'default nil :height 130 :family "Consolas"))
+(when (string= system-name "bigboi")
+  (set-face-attribute 'default nil :height 110 :family "Consolas"))
 
 ;; No backup files
 (setq make-backup-files nil)
