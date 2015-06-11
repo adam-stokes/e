@@ -18,6 +18,7 @@
     helm
     helm-flycheck
     helm-package
+    handlebars-mode
     hl-line
     ibuffer
     inf-ruby

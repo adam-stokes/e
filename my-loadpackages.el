@@ -8,6 +8,7 @@
 
 ;; magit
 (require 'magit)
+(setq magit-auto-revert-mode nil)
 (define-key global-map (kbd "C-c m") 'magit-status)
 
 ;; yasnippet
@@ -117,3 +118,6 @@
 
 ;; rubocop
 (require 'rubocop)
+
+;; handlebars
+(require 'handlebars-mode)
