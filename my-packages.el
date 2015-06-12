@@ -10,27 +10,31 @@
 ;; packages to load
 (defvar required-packages
   '(ace-jump-mode
+    atom-dark-theme
     autopair
     coffee-mode
-    atom-dark-theme
+    feature-mode
     flycheck
     flycheck-pyflakes
+    handlebars-mode
     helm
     helm-flycheck
     helm-package
-    handlebars-mode
     hl-line
-    mustache-mode
     ibuffer
     inf-ruby
     jedi
+    less-css-mode
     magit
     markdown-mode
+    mustache-mode
+    monokai-theme
     neotree
     py-autopep8
     rainbow-delimiters
     robe
     rspec-mode
+    rubocop
     ruby-end
     sass-mode
     scss-mode
@@ -38,8 +42,9 @@
     toml-mode
     yaml-mode
     yasnippet
-    feature-mode
-    rubocop
+    adoc-mode
+    org
+    org-bullets
     ) "list of packages that are installed at launch")
 
 ;; check installed packages

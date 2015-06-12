@@ -4,7 +4,7 @@
 (load "~/.emacs.d/my-packages.el")
 
 ;; Set theme
-(load-theme 'atom-dark t)
+(load-theme 'monokai t)
 
 ;; magit
 (require 'magit)
@@ -125,3 +125,5 @@
 
 ;; mustache
 (require 'mustache-mode)
+
+(require 'org-bullets)

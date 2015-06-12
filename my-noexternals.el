@@ -1,13 +1,13 @@
 ;; base config, no external packages/dependencies
 
 ;; Font
-(add-to-list 'default-frame-alist '(font . "Ubuntu Mono 10"))
+(add-to-list 'default-frame-alist '(font . "Ubuntu Mono 11"))
 (set-face-attribute 'default nil :height 100 :family "Ubuntu Mono")
 
 (when (string= system-name "DRAGONRAH")
   (set-face-attribute 'default nil :height 130 :family "Ubuntu Mono"))
 (when (string= system-name "bigboi")
-  (set-face-attribute 'default nil :height 110 :family "Ubuntu Mono"))
+  (set-face-attribute 'default nil :height 130 :family "Ubuntu Mono"))
 
 ;; No backup files
 (setq make-backup-files nil)
