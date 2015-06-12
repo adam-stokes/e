@@ -122,3 +122,6 @@
 
 ;; handlebars
 (require 'handlebars-mode)
+
+;; mustache
+(require 'mustache-mode)

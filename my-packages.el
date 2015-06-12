@@ -20,6 +20,7 @@
     helm-package
     handlebars-mode
     hl-line
+    mustache-mode
     ibuffer
     inf-ruby
     jedi
