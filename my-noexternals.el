@@ -1,13 +1,12 @@
 ;; base config, no external packages/dependencies
 
-;; Font
-(add-to-list 'default-frame-alist '(font . "Ubuntu Mono 11"))
-(set-face-attribute 'default nil :height 100 :family "Ubuntu Mono")
 
-(when (string= system-name "DRAGONRAH")
-  (set-face-attribute 'default nil :height 130 :family "Ubuntu Mono"))
-(when (string= system-name "bigboi")
-  (set-face-attribute 'default nil :height 130 :family "Ubuntu Mono"))
+;; Font
+(mapc
+ (lambda(face)
+   (set-face-attribute face nil :weight 'normal :underline nil)
+   (set-face-attribute face nil :height 100 :family "Ubuntu Mono"))
+ (face-list))
 
 ;; No backup files
 (setq make-backup-files nil)
@@ -57,7 +56,6 @@
  '(menu-bar-mode tool-bar-mode scroll-bar-mode))
 
 
-
 ;; movement between windows
 (global-set-key (kbd "C-c C-j") 'windmove-left)
 (global-set-key (kbd "C-c C-k") 'windmove-down)
@@ -97,3 +95,12 @@
   "Find any non-ascii characters in the current buffer."
   (interactive)
   (occur "[^[:ascii:]]"))
+
+
+;; org-mode specific
+(setq org-agenda-files (list "~/Dropbox/Canonical/GTD/openstack-installer.org"
+                             "~/Dropbox/Canonical/GTD/subiquity.org"))
+(global-set-key (kbd "<f12>") 'org-agenda)
+(setq inhibit-splash-screen t)
+(org-agenda-list)
+(delete-other-windows)
