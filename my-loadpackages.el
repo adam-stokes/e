@@ -33,6 +33,7 @@
 ;;; activate, otherwise, auto-complete will
 (ac-set-trigger-key "TAB")
 (ac-set-trigger-key "<tab>")
+(add-to-list 'ac-modes 'coffee-mode)
 
 ;; jedi
 (require 'jedi)

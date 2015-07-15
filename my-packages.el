@@ -16,6 +16,7 @@
     feature-mode
     flycheck
     flycheck-pyflakes
+    flymake-coffee
     handlebars-mode
     helm
     helm-flycheck
