@@ -13,17 +13,17 @@
 (define-key global-map (kbd "C-c m") 'magit-status)
 
 ;; yasnippet
-(require 'yasnippet)
-(yas-load-directory "~/.emacs.d/snippets")
-(yas-global-mode t)
-;; Remove Yasnippet's default tab key binding
-(define-key yas-minor-mode-map (kbd "<tab>") nil)
-(define-key yas-minor-mode-map (kbd "TAB") nil)
-;; Set Yasnippet's key binding to shift+tab
-(define-key yas-minor-mode-map (kbd "<backtab>") 'yas-expand)
+;; (require 'yasnippet)
+;; (yas-load-directory "~/.emacs.d/snippets")
+;; (yas-global-mode t)
+;; ;; Remove Yasnippet's default tab key binding
+;; (define-key yas-minor-mode-map (kbd "<tab>") nil)
+;; (define-key yas-minor-mode-map (kbd "TAB") nil)
+;; ;; Set Yasnippet's key binding to shift+tab
+;; (define-key yas-minor-mode-map (kbd "<backtab>") 'yas-expand)
 
-(add-hook 'term-mode-hook (lambda ()
-			    (setq yas-dont-activate t)))
+;; (add-hook 'term-mode-hook (lambda ()
+;; 			    (setq yas-dont-activate t)))
 
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
@@ -98,6 +98,18 @@
 (require 'flycheck)
 (global-flycheck-mode)
 (global-set-key (kbd "C-c j") 'helm-flycheck)
+;; disable jshint since we prefer eslint checking
+(setq-default flycheck-disabled-checkers
+  (append flycheck-disabled-checkers
+    '(javascript-jshint)))
+
+;; use eslint with web-mode for jsx files
+(flycheck-add-mode 'javascript-eslint 'web-mode)
+
+;; disable json-jsonlist checking for json files
+(setq-default flycheck-disabled-checkers
+  (append flycheck-disabled-checkers
+    '(json-jsonlist)))
 
 ;; helm flycheck
 (require 'helm-flycheck)
@@ -128,3 +140,20 @@
 (require 'mustache-mode)
 
 (require 'org-bullets)
+
+;; web-mode
+(require 'web-mode)
+;; adjust indents for web-mode to 2 spaces
+(defun my-web-mode-hook ()
+  "Hooks for Web mode. Adjust indents"
+  ;;; http://web-mode.org/
+  (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-css-indent-offset 2)
+  (setq web-mode-code-indent-offset 2))
+(add-hook 'web-mode-hook  'my-web-mode-hook)
+
+;; js2
+(require 'js2-mode)
+
+;; json mode
+(require 'json-mode)

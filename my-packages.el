@@ -10,6 +10,7 @@
 ;; packages to load
 (defvar required-packages
   '(ace-jump-mode
+    adoc-mode
     atom-dark-theme
     autopair
     coffee-mode
@@ -25,12 +26,16 @@
     ibuffer
     inf-ruby
     jedi
+    js2-mode
+    json-mode
     less-css-mode
     magit
     markdown-mode
-    mustache-mode
     monokai-theme
+    mustache-mode
     neotree
+    org
+    org-bullets
     py-autopep8
     rainbow-delimiters
     robe
@@ -41,11 +46,9 @@
     scss-mode
     slim-mode
     toml-mode
+    web-mode
+    web-beautify
     yaml-mode
-    yasnippet
-    adoc-mode
-    org
-    org-bullets
     ) "list of packages that are installed at launch")
 
 ;; check installed packages
