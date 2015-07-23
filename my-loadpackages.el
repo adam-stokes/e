@@ -157,3 +157,6 @@
 
 ;; json mode
 (require 'json-mode)
+
+;; editorconfig
+(require 'editorconfig)

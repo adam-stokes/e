@@ -14,6 +14,7 @@
     atom-dark-theme
     autopair
     coffee-mode
+    editorconfig
     feature-mode
     flycheck
     flycheck-pyflakes
