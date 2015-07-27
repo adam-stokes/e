@@ -160,3 +160,6 @@
 
 ;; editorconfig
 (require 'editorconfig)
+
+;; jade
+(require 'jade-mode)

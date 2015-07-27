@@ -26,6 +26,7 @@
     hl-line
     ibuffer
     inf-ruby
+    jade-mode
     jedi
     js2-mode
     json-mode
