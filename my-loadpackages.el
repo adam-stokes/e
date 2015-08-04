@@ -163,3 +163,6 @@
 
 ;; jade
 (require 'jade-mode)
+
+;; stylus-mode
+(require 'stylus-mode)

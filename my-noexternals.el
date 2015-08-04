@@ -105,3 +105,16 @@
 (setq inhibit-splash-screen t)
 (org-agenda-list)
 (delete-other-windows)
+
+(defun jstidy ()
+  "Beautify a region of javascript using the code from jsbeautify.org"
+  (interactive)
+  (let ((orig-point (point)))
+    (unless (mark)
+      (mark-defun))
+    (shell-command-on-region (point)
+                             (mark)
+                             (concat "js-beautify -f - ")
+                             nil t)
+    (goto-char orig-point)))
+(global-set-key "\C-cg" 'jstidy)

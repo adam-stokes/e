@@ -47,6 +47,7 @@
     sass-mode
     scss-mode
     slim-mode
+    stylus-mode
     toml-mode
     web-mode
     web-beautify
