@@ -25,15 +25,21 @@
 ;; (add-hook 'term-mode-hook (lambda ()
 ;; 			    (setq yas-dont-activate t)))
 
-(require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
-(ac-config-default)
+;;(require 'auto-complete-config)
+;;(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
+;;(ac-config-default)
 ;;; set the trigger key so that it can work together with yasnippet on tab key,
 ;;; if the word exists in yasnippet, pressing tab will cause yasnippet to
 ;;; activate, otherwise, auto-complete will
-(ac-set-trigger-key "TAB")
-(ac-set-trigger-key "<tab>")
-(add-to-list 'ac-modes 'coffee-mode)
+;;(ac-set-trigger-key "TAB")
+;;(ac-set-trigger-key "<tab>")
+;; (add-to-list 'ac-modes 'coffee-mode)
+
+;; company
+(add-hook 'after-init-hook 'global-company-mode)
+(with-eval-after-load 'company
+  (add-to-list 'company-backends 'company-web)
+  (add-to-list 'company-backends 'company-jedi))
 
 ;; jedi
 (require 'jedi)

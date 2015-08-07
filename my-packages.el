@@ -10,6 +10,9 @@
 ;; packages to load
 (defvar required-packages
   '(ace-jump-mode
+    company
+    company-jedi
+    company-web
     adoc-mode
     atom-dark-theme
     autopair
