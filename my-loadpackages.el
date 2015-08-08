@@ -39,11 +39,12 @@
 (add-hook 'after-init-hook 'global-company-mode)
 (with-eval-after-load 'company
   (add-to-list 'company-backends 'company-web)
-  (add-to-list 'company-backends 'company-jedi))
+  (add-to-list 'company-backends 'company-anaconda))
 
-;; jedi
-(require 'jedi)
-(add-hook 'python-mode-hook 'jedi:setup)
+;; anaconda
+(require 'anaconda-mode)
+(add-hook 'python-mode-hook 'anaconda-mode)
+
 
 ;; helm
 (require 'helm)

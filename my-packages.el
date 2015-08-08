@@ -3,15 +3,14 @@
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
-(add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (package-initialize)
 
 ;; packages to load
 (defvar required-packages
   '(ace-jump-mode
+    anaconda-mode
     company
-    company-jedi
+    company-anaconda
     company-web
     adoc-mode
     atom-dark-theme
@@ -30,7 +29,7 @@
     ibuffer
     inf-ruby
     jade-mode
-    jedi
+;;    jedi
     js2-mode
     json-mode
     less-css-mode
