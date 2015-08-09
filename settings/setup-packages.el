@@ -18,12 +18,12 @@
     expand-region
     undo-tree
     fold-this
+    leuven-theme
     anaconda-mode
     company
     company-anaconda
     company-web
     adoc-mode
-    atom-dark-theme
     autopair
     coffee-mode
     editorconfig
@@ -63,6 +63,7 @@
     web-mode
     web-beautify
     yaml-mode
+    win-switch
     ) "List of packages that are installed at launch.")
 
 ;; check installed packages

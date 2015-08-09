@@ -39,7 +39,7 @@
 ;; Load packages
 
 ;; Set theme
-(load-theme 'atom-dark t)
+(load-theme 'leuven t)
 
 ;; expand-region
 (require 'expand-region)
@@ -202,6 +202,10 @@
 
 ;; stylus-mode
 (require 'stylus-mode)
+
+;; win-switch
+(require 'win-switch)
+(setq win-switch-idle-time 5)
 
 ;; Emacs server
 (require 'server)
