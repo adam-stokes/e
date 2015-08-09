@@ -1,4 +1,10 @@
-;; packages
+;;; setup-packages.el --- Install packages
+;;;
+;;; Commentary:
+;;;  Installs missing packages
+
+
+;;; Code:
 (require 'cl)
 (require 'package)
 (add-to-list 'package-archives
@@ -8,6 +14,10 @@
 ;; packages to load
 (defvar required-packages
   '(ace-jump-mode
+    fill-column-indicator
+    expand-region
+    undo-tree
+    fold-this
     anaconda-mode
     company
     company-anaconda
@@ -29,7 +39,6 @@
     ibuffer
     inf-ruby
     jade-mode
-;;    jedi
     js2-mode
     json-mode
     less-css-mode
@@ -54,19 +63,14 @@
     web-mode
     web-beautify
     yaml-mode
-    ) "list of packages that are installed at launch")
+    ) "List of packages that are installed at launch.")
 
 ;; check installed packages
 (defun packages-installed-p ()
+  "Install package if not installed."
   (loop for p in required-packages
 	when (not (package-installed-p p)) do (return nil)
 	finally (return t)))
 
-(unless (packages-installed-p)
-  ;;; check for new packages, refresh database and install missing if not updated.
-  (message "%s" "Refreshing package database...")
-  (package-refresh-contents)
-  (message "%s" "done.")
-  (dolist (p required-packages)
-    (when (not (package-installed-p p))
-      (package-install p))))
+(provide 'setup-packages)
+;;; setup-packages.el ends here
