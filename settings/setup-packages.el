@@ -20,6 +20,7 @@
     fold-this
     monokai-theme
     anaconda-mode
+    paradox
     company
     company-anaconda
     company-web

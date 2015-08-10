@@ -41,6 +41,9 @@
 ;; Set theme
 (load-theme 'monokai t)
 
+;; paradox
+(require 'paradox)
+
 ;; expand-region
 (require 'expand-region)
 ;; Don't use expand-region fast keys
@@ -218,4 +221,3 @@
 (put 'narrow-to-region 'disabled nil)
 
 ;;; init.el ends here
-
