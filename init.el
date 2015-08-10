@@ -39,7 +39,7 @@
 ;; Load packages
 
 ;; Set theme
-(load-theme 'leuven t)
+(load-theme 'monokai t)
 
 ;; expand-region
 (require 'expand-region)

@@ -18,7 +18,7 @@
     expand-region
     undo-tree
     fold-this
-    leuven-theme
+    monokai-theme
     anaconda-mode
     company
     company-anaconda
