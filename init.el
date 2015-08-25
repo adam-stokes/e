@@ -220,4 +220,7 @@
 (put 'upcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
 
+(require 'powerline)
+(powerline-default-theme)
+
 ;;; init.el ends here

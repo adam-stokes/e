@@ -34,7 +34,9 @@
     flymake-coffee
     handlebars-mode
     helm
+    helm-make
     helm-flycheck
+    powerline
     helm-package
     hl-line
     ibuffer
