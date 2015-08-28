@@ -68,6 +68,7 @@
     web-mode
     win-switch
     yaml-mode
+    keychain-environment
     ) "List of packages that are installed at launch.")
 
 ;; check installed packages
