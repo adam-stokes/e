@@ -14,29 +14,26 @@
 ;; packages to load
 (defvar required-packages
   '(ace-jump-mode
-    fill-column-indicator
-    expand-region
-    undo-tree
-    fold-this
-    monokai-theme
+    adoc-mode
     anaconda-mode
-    paradox
+    autopair
+    coffee-mode
     company
     company-anaconda
     company-web
-    adoc-mode
-    autopair
-    coffee-mode
     editorconfig
+    expand-region
     feature-mode
+    fill-column-indicator
+    fish-mode
     flycheck
     flycheck-pyflakes
     flymake-coffee
+    fold-this
     handlebars-mode
     helm
-    helm-make
     helm-flycheck
-    powerline
+    helm-make
     helm-package
     hl-line
     ibuffer
@@ -48,10 +45,13 @@
     magit
     markdown-mode
     monokai-theme
+    monokai-theme
     mustache-mode
     neotree
     org
     org-bullets
+    paradox
+    powerline
     py-autopep8
     rainbow-delimiters
     robe
@@ -63,10 +63,11 @@
     slim-mode
     stylus-mode
     toml-mode
-    web-mode
+    undo-tree
     web-beautify
-    yaml-mode
+    web-mode
     win-switch
+    yaml-mode
     ) "List of packages that are installed at launch.")
 
 ;; check installed packages
