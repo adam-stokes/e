@@ -28,7 +28,7 @@
 (mapc
  (lambda(face)
    (set-face-attribute face nil :weight 'normal :underline nil)
-   (set-face-attribute face nil :height 100 :family "Ubuntu Mono"))
+   (set-face-attribute face nil :height 120 :family "Ubuntu Mono"))
  (face-list))
 
 ;; Don't highlight matches with jump-char - it's distracting
