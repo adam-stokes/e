@@ -13,7 +13,8 @@
 
 ;; packages to load
 (defvar required-packages
-  '(ace-jump-mode
+  '(aurora-theme
+    ace-jump-mode
     adoc-mode
     anaconda-mode
     autopair
