@@ -30,6 +30,8 @@
     flycheck
     flycheck-pyflakes
     flymake-coffee
+    flymake-php
+    php-mode
     fold-this
     handlebars-mode
     helm

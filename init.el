@@ -223,6 +223,8 @@
 (require 'powerline)
 (powerline-default-theme)
 
+(require 'php-mode)
+
 ;;; init.el ends here
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
