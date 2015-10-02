@@ -72,6 +72,8 @@
     win-switch
     yaml-mode
     keychain-environment
+    sqlup-mode
+    sql-indent
     ) "List of packages that are installed at launch.")
 
 ;; check installed packages
