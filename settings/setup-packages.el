@@ -19,6 +19,7 @@
     anaconda-mode
     autopair
     coffee-mode
+    browse-kill-ring
     company
     company-anaconda
     company-web
