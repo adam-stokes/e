@@ -20,6 +20,7 @@
     autopair
     coffee-mode
     browse-kill-ring
+    clojure-mode
     company
     company-anaconda
     company-web
@@ -32,6 +33,7 @@
     flycheck-pyflakes
     flymake-coffee
     flymake-php
+    flycheck-clojure
     php-mode
     fold-this
     handlebars-mode
