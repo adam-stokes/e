@@ -128,16 +128,6 @@
 ;; Show column number in mode line
 (column-number-mode 1)
 
-;; org-mode specific
-(defvar org-agenda-files)
-(setq org-agenda-files (list "~/Dropbox/Canonical/GTD/openstack-installer.org"
-                             "~/Dropbox/Canonical/GTD/subiquity.org"
-                             "~/Dropbox/Personal/GTD.org"))
-(global-set-key (kbd "<f12>") 'org-agenda)
-(setq inhibit-splash-screen t)
-(org-agenda-list)
-(delete-other-windows)
-
 ;; erc
 (setq erc-hide-list '("JOIN" "PART" "QUIT"))
 (setq erc-track-exclude-types '("JOIN" "NICK" "PART" "QUIT" "MODE"

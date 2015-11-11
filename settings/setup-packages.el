@@ -13,7 +13,7 @@
 
 ;; packages to load
 (defvar required-packages
-  '(aurora-theme
+  '(ujelly-theme
     ace-jump-mode
     adoc-mode
     anaconda-mode

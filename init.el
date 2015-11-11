@@ -39,7 +39,7 @@
 ;; Load packages
 
 ;; Set theme
-(load-theme 'aurora t)
+(load-theme 'ujelly t)
 
 ;; paradox
 (require 'paradox)
