@@ -227,6 +227,8 @@
 
 (require 'sqlup-mode)
 
+(beacon-mode 1)
+
 ;;; init.el ends here
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

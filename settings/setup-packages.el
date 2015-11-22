@@ -14,6 +14,7 @@
 ;; packages to load
 (defvar required-packages
   '(ujelly-theme
+    beacon-mode
     ace-jump-mode
     adoc-mode
     anaconda-mode
