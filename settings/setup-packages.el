@@ -13,8 +13,8 @@
 
 ;; packages to load
 (defvar required-packages
-  '(ujelly-theme
-    beacon-mode
+'(beacon-mode
+  aurora-theme
     ace-jump-mode
     adoc-mode
     anaconda-mode
