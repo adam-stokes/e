@@ -13,8 +13,8 @@
 
 ;; packages to load
 (defvar required-packages
-'(beacon-mode
-  aurora-theme
+  '(beacon
+    aurora-theme
     ace-jump-mode
     adoc-mode
     anaconda-mode
