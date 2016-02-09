@@ -41,6 +41,9 @@
 ;; Set theme
 (load-theme 'monokai t)
 
+(require 'pyenv-mode)
+(require 'pyenv-mode-auto)
+
 ;; paradox
 (require 'paradox)
 

@@ -18,6 +18,8 @@
     ace-jump-mode
     adoc-mode
     anaconda-mode
+    pyenv-mode
+    pyenv-mode-auto
     autopair
     coffee-mode
     browse-kill-ring
