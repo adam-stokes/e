@@ -59,20 +59,11 @@
 (require 'browse-kill-ring)
 (setq browse-kill-ring-quit-action 'save-and-restore)
 
-;; Fill column
-(require 'fill-column-indicator)
-(setq fci-rule-color "#111122")
-
 ;; magit
 (require 'magit)
 (setq magit-auto-revert-mode nil)
 (setq magit-last-seen-setup-instructions "1.4.0")
 (define-key global-map (kbd "C-c m") 'magit-status)
-
-;; company
-(add-hook 'after-init-hook 'global-company-mode)
-(with-eval-after-load 'company
-  (add-to-list 'company-backends 'company-anaconda))
 
 ;; anacognda
 (require 'anaconda-mode)
@@ -130,9 +121,6 @@
 (require 'scss-mode)
 (require 'sass-mode)
 
-;; slim
-(require 'slim-mode)
-
 ;; neotree
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
@@ -157,30 +145,12 @@
 ;; helm flycheck
 (require 'helm-flycheck)
 
-;; coffee script
-(require 'coffee-mode)
-(setq coffee-tab-width 2)
-
 ;; ansi color
 (require 'ansi-color)
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
 
-;; ruby
-(require 'robe)
-(require 'rspec-mode)
-(require 'ruby-end)
-
-;; cucumber features
-(require 'feature-mode)
-
-;; rubocop
-(require 'rubocop)
-
 ;; handlebars
 (require 'handlebars-mode)
-
-;; mustache
-(require 'mustache-mode)
 
 (require 'org-bullets)
 
@@ -225,8 +195,6 @@
 
 (require 'powerline)
 (powerline-default-theme)
-
-(require 'php-mode)
 
 (require 'sqlup-mode)
 

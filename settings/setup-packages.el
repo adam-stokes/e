@@ -13,31 +13,16 @@
 
 ;; packages to load
 (defvar required-packages
-  '(beacon
-    aurora-theme
+  '(
+    beacon
     ace-jump-mode
-    adoc-mode
     anaconda-mode
-    pyenv-mode
-    pyenv-mode-auto
     autopair
-    coffee-mode
     browse-kill-ring
-    clojure-mode
-    company
-    company-anaconda
-    company-web
     editorconfig
     expand-region
-    feature-mode
-    fill-column-indicator
-    fish-mode
     flycheck
     flycheck-pyflakes
-    flymake-coffee
-    flymake-php
-    flycheck-clojure
-    php-mode
     fold-this
     handlebars-mode
     helm
@@ -46,30 +31,26 @@
     helm-package
     hl-line
     ibuffer
-    inf-ruby
     jade-mode
     js2-mode
     json-mode
-    less-css-mode
+    keychain-environment
     magit
     markdown-mode
     monokai-theme
-    monokai-theme
-    mustache-mode
     neotree
     org
     org-bullets
     paradox
     powerline
     py-autopep8
+    pyenv-mode
+    pyenv-mode-auto
     rainbow-delimiters
-    robe
-    rspec-mode
-    rubocop
-    ruby-end
     sass-mode
     scss-mode
-    slim-mode
+    sql-indent
+    sqlup-mode
     stylus-mode
     toml-mode
     undo-tree
@@ -77,9 +58,6 @@
     web-mode
     win-switch
     yaml-mode
-    keychain-environment
-    sqlup-mode
-    sql-indent
     ) "List of packages that are installed at launch.")
 
 ;; check installed packages
