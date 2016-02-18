@@ -15,6 +15,7 @@
 (defvar defuns-dir)
 (setq defuns-dir
       (expand-file-name "defuns" user-emacs-directory))
+(setq package-check-signature nil)
 
 ;; Load path
 (add-to-list 'load-path settings-dir)
